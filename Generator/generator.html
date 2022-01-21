@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+	<style>
+		.container{display: flex; flex-direction: column;}
+		#styles{position: absolute; right:30px; top:20%; border:3px solid red; width: 40%; height: 240px; margin-right: 50px; padding:40px; font-size: 20px; z-index: -10;}
+		label{display: block; margin-bottom: 40px;}
+		/* .visual__box{display: flex; justify-content: center; align-items: center;} */
+		/* #textRange{font-size: 30px; text-align: center;} */
+	/* ************* */
+
+	table {
+      border-collapse: collapse;
+    }
+
+    td,
+    th {
+      border: 1px solid black;
+      padding: 3px;
+      text-align: center;
+    }
+
+    th {
+      font-weight: bold;
+      background-color: #E6E6E6;
+    }
+	
+	</style>
+
+</head>
+<body>
+	<div class="container">
+		<div class="input__box">
+			<label for="">
+				<input type="range" min="100" max="700" step="100" id='r1'>
+				weight
+			</label>
+			<label for="">
+				<input type="range" min="10" max="50" step="1" id='r2'>
+				height
+			</label>
+		</div>
+		<div class="visual__box">
+			<p id="textRange">TEST TEXT</p>
+			<div id='styles'>
+				<p>font-weight:<b id="weight">400</b>;</p>
+				<p>font-size: <b id="size">30px</b>;</p>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="js/script.js"></script>
+	<script type="text/javascript"></script>
+
+
+
+
+
+</body>
+</html>
